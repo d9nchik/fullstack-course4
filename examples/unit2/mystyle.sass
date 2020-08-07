@@ -23,7 +23,7 @@ h2
 div
   padding-top: 25px
   background-color: #cecece
-  margin: 20px
+  margin: 20px 0 20px 20px
   position: relative
 
 div:nth-child(2) h2
@@ -40,8 +40,11 @@ article
 
 
 @media (min-width: 992px)
-  body
-    margin-right: 0
   div
     float: left
     width: 29.5%
+
+@media (min-width: 768px) and (max-width: 991px)
+  div
+    float: left
+    width: 45%
