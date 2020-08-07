@@ -7,6 +7,7 @@ $primary-color: bisque
 body
   font: 100% $font-stack
   background-color: $primary-color
+  padding-right: 10px
 
 h1
   text-align: center
@@ -23,7 +24,7 @@ h2
 div
   padding-top: 25px
   background-color: #cecece
-  margin: 20px 0 20px 20px
+  margin: 0 0 20px 20px
   position: relative
 
 div:nth-child(2) h2
@@ -40,11 +41,17 @@ article
 
 
 @media (min-width: 992px)
+  body
+    padding: 0
   div
     float: left
     width: 29.5%
 
 @media (min-width: 768px) and (max-width: 991px)
+  body
+    padding-right: 0
   div
     float: left
     width: 45%
+  #sushi
+    width: 93%
